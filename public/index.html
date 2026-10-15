@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Universal Offline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Conversor Offline Open Source</h2>
+        <p class="subtitle">Convierte archivos multimedia localmente en tu PC sin internet.</p>
+
+        <!-- Zona de Drag and Drop -->
+        <div class="form-group">
+            <div id="dropZone" class="drop-zone" onclick="document.getElementById('fileInput').click()">
+                <span id="dropZoneText">📁 Haz clic o arrastra tu archivo aquí</span>
+                <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelect(this.files[0])">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="outputFormat">Formato de salida sugerido:</label>
+            <select id="outputFormat" disabled>
+                <option value="">Selecciona un archivo primero...</option>
+            </select>
+        </div>
+
+        <button id="convertBtn" onclick="startLocalConversion()" disabled>Iniciar Conversión Local</button>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

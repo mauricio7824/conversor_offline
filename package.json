@@ -1,0 +1,26 @@
+{
+  "name": "conversor-universal-offline",
+  "version": "1.0.0",
+  "description": "Un conversor de archivos local, gratuito y de código abierto.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "converter",
+    "ffmpeg",
+    "opensource",
+    "offline"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.6.1",
+    "express": "^4.19.2",
+    "ffmpeg-static": "^5.3.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "mammoth": "^1.13.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.20.2"
+  }
+}
